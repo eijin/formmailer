@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	font-size: 0.8em;
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	background-color: #f6f6f6;
+	color: #333;
+	text-align: center;
+}
+input {
+	width: 350px;
+	font-size:1.0em;
+}
+textarea {
+	width: 360px;
+	font-size:1.0em;
+}
+.fbutton {
+	width: 110px;
+	margin: 10px;
+}
+
+#form_page {
+	width: 500px;
+	margin: 0 0 0 25px;
+	font-size:1.1em;
+	text-align: left;
+}
+#header {
+	margin: 20px 0 0 0;
+	padding: 0;
+	height: 50px;
+}
+#header h1 {
+	font-size: 1.4em;
+	font-weight: bold;
+	padding: 0;
+	margin: 10px 0 0 0;
+	text-align: left;
+	border-bottom: 3px solid #fff;
+}
+#content {
+	margin: 0;
+	padding: 0;
+}
+#content dl {
+	padding: 0;
+	margin: 10px 0 10px 0;
+}
+#content dl dt {
+	margin: 0 0 10px 0;
+	width: 120px;
+	float: left;
+	text-align: right;
+}
+#content dl dd {
+	text-align: left;
+	margin: 0 0 15px 130px;
+	width: 370px;
+}

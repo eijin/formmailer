@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<formmail> 
+  <channel> 
+    <title>Sample Form Mail</title> 
+    <link>http://www.smallmake.com</link> 
+    <description>by formmail by eiji nakai</description> 
+    <language></language> 
+    <pubDate>12 Jan 2010 13:33:58 +0900</pubDate>
+		<options>
+			<hostName></hostName>
+			<htmlEncode>UTF-8</htmlEncode>
+			<dataEmailHeadMessage>Date: {date('Y-m-d H:i:s')}\nIP: {$_SERVER['REMOTE_ADDR']}\nAgent: {$_SERVER['HTTP_USER_AGENT']}\n</dataEmailHeadMessage>
+			<dataEmailItemLabelPrefix></dataEmailItemLabelPrefix>
+			<dataEmailItemLabelSuffix> : </dataEmailItemLabelSuffix>
+			<uploadFileLimitedSize>2097152</uploadFileLimitedSize>
+		</options>
+    <params> 
+      <dataEmailFrom>nakai@smallmake.com</dataEmailFrom> 
+      <dataEmailTo>nakai@smallmake.com</dataEmailTo> 
+      <dataEmailSubject>[SAMPLE FORM MAIL]</dataEmailSubject> 
+      <dataEmailComment>This is sent by formmailer.</dataEmailComment>
+			<dataCsvPath>data/sample.csv</dataCsvPath>
+			<dataCsvEncode>sjis-win</dataCsvEncode>
+			<htmlValidate>sample_validation.html</htmlValidate>
+			<htmlConfirm>sample_confirm.html</htmlConfirm>
+			<htmlThanks>sample_thanks.html</htmlThanks>
+      <returnUrl>http://www.sample.com/sample.html</returnUrl> 
+      <autoReplyFrom>nakai@smallmake.com</autoReplyFrom> 
+			<autoReplySubject>[www.sample.com] Thank you for your comment.</autoReplySubject>
+			<autoReplyBcc>nakai@smallmake.com</autoReplyBcc>
+			<autoReplyMessage>Thank you for your comment to www.sample.com.
+This is auto reply mail.
+
+Your comment is following ...
+------
+
+__%comment%__
+
+
+</autoReplyMessage>
+    </params> 
+  </channel> 
+</formmail>

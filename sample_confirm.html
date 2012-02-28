@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>お問い合わせ</title>
+<link rel="stylesheet" type="text/css" href="sample.css" media="all" />
+<style type="text/css">
+body,td,th {
+	font-family: "Lucida Grande", Verdana, Arial, Sans-Serif;
+}
+</style>
+</head>
+
+<body>
+<div id="form_page">
+	<div id="header">
+		<h1>お問い合わせフォーム：確認</h1>
+	</div>
+	<div id="content">
+		<p>以下の内容をご確認の上、[送信]ボタンをクリックしてください。</p>
+		<p>&nbsp;</p>
+		<form class="myform" method="post" action="__%PhpSelf%__" enctype="multipart/form-data">
+			__%HiddenData%__
+			<dl>
+				<dt>お名前：</dt><dd>__%pname%__</dd>
+				<dt>会社名：</dt><dd>__%cname%__</dd>
+				<dt>メールアドレス：</dt><dd>__%email%__</dd>
+				<dt>お問合せ内容：</dt><dd>__%comment%__</dd>
+				<dt></dt><dd><input class="fbutton" type="submit" value="送信">&nbsp;<input class="fbutton" type="button" value="閉じる" onclick="window.close();"></dd>
+			</dl>
+		</form>
+	</div>
+</div>
+</body>
+</html>
